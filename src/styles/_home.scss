@@ -1,0 +1,27 @@
+.home {
+    
+    &__banner {
+        padding-top: 740px;
+        background-image: url(../../dist/images/arcane-banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+        @media (max-width: 767px) {
+            padding: 180px 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+
+        &__netflix {
+            max-height: 50px;
+            height: 100%;
+        }
+    }
+
+}

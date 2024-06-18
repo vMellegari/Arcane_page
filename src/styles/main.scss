@@ -1,0 +1,84 @@
+@use "variaveis";
+@use "header";
+@use "home";
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: variaveis.$corTextoPrincipal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lunasima", sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$corDeFundoPrimaria;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 767px) {
+        @include text(14px);
+    }
+}
+
+.text--big {
+    @include text(18px);
+
+    @media (max-width: 767px) {
+        @include text(15px);
+    }
+}
+
+.title {
+    @include title;
+
+    @media (max-width: 767px) {
+        @include title(24px);
+    }
+}
+
+
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    color: variaveis.$corTextoSecundario;
+    background-color: variaveis.$corDeFundoBotao;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corDeFundoBotao;
+
+    &:hover {
+        background-color: lighten(variaveis.$corDeFundoBotao, 3%);
+    }
+
+    @media (max-width: 767px) {
+        height: 50px;
+    }
+}
