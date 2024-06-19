@@ -15,15 +15,15 @@
             <img class="header__logo" src="./dist/images/arcane-symbol.png" alt="Arcane Logo">
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button">Home</a>
+                    <a href="#home" class="button">Home</a>
                 </li>
                 <li class="header__links__item">
-                    <a href="#" class="button">Sobre</a>
+                    <a href="#sobre" class="button">Sobre</a>
                 </li>
             </ul>
         </div>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home__banner"></div>
         <div class="home__content">
             <h2 class="text--big">Já Disponível na</h2>
@@ -32,7 +32,82 @@
             </a>
         </div>
     </section>
-
-    <script src="dist/js/main.js"></script>
-</body>
-</html>
+    <section class="sobre" id="sobre">
+        <nav class="sobre__tabs">
+            <button data-tab-button="preview" class="sobre__tabs__button sobre__tabs__button--is-active">
+                Preview
+            </button>
+            <button data-tab-button="personagens" class="sobre__tabs__button">
+                Personagens
+            </button>
+            <button data-tab-button="cidades" class="sobre__tabs__button">
+                Cidades
+            </button>
+        </nav>
+        <ul data-tab-id="preview" class="sobre__list sobre__list--is-active">
+            <li class="sobre__list__item">
+                <iframe class="trailer" src="https://www.youtube.com/embed/3MB3OK3Xnvs" title="Arcane | Trailer oficial | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </li>
+            <li class="sobre__list__item">
+                <p class="text">
+                    Arcane é uma série animada de televisão ambientada no universo de "League of Legends". A história se passa nas cidades gêmeas de Piltover e Zaun. Piltover é conhecida como "a Cidade do Progresso", um centro próspero de inovação e ciência, enquanto Zaun é uma cidade subterrânea cheia de perigos e desigualdades.
+                    <br>
+                    A trama central de "Arcane" foca nas histórias de origem de vários campeões icônicos de "League of Legends", com destaque para as irmãs Vi e Jinx. Vi, uma ex-criminosa com um forte senso de justiça, tenta proteger Zaun e trazer estabilidade para sua cidade natal. Jinx, por outro lado, é uma anarquista instável e imprevisível, cuja relação complexa e conturbada com Vi é um dos pilares emocionais da série.
+                    <br>
+                    Além delas, a série explora as histórias de outros personagens importantes como Jayce, Viktor, Caitlyn, e Heimerdinger. Jayce e Viktor são inventores brilhantes que trabalham em tecnologias revolucionárias que podem mudar o destino de Piltover e Zaun. Caitlyn, uma atiradora de elite, busca justiça em meio ao caos, enquanto Heimerdinger, um yordle inventor e membro do conselho de Piltover, tenta equilibrar a ciência com a ética.
+                    <br>
+                    A série aborda temas profundos como desigualdade social, avanço tecnológico, e os conflitos morais que surgem quando o progresso entra em choque com a humanidade. A animação de "Arcane" é elogiada por sua qualidade visual impressionante, trama envolvente, e desenvolvimento de personagens complexo e emocional.
+                    <br>
+                    "Arcane" é aclamada tanto por fãs de "League of Legends" quanto por novos espectadores, destacando-se como uma das melhores adaptações de videogames para a televisão.
+                </p>
+            </li>
+        </ul>
+        <ul data-tab-id="personagens" class="sobre__list personagem">
+            <li class="sobre__list__item">
+                <h1 class="title--small">Vi</h1>
+                <img src="./dist/images/vi.jpg" alt="Vi">
+            </li>
+            <li class="sobre__list__item">
+                <h1 class="title--small">Jinx</h1>
+                <img src="./dist/images/jinx.jpg" alt="Jinx">               
+            </li>
+            <li class="sobre__list__item">
+                <h1 class="title--small">Silco</h1>
+                <img src="./dist/images/silco.jpg" alt="Silco">
+            </li>
+            <li class="sobre__list__item">
+                <h1 class="title--small">Caitlyn</h1>
+                <img src="./dist/images/caitlyn.jpg" alt="Caitlyn">               
+            </li>
+            <li class="sobre__list__item">
+                <h1 class="title--small">Jayce</h1>
+                <img src="./dist/images/jayce.jpg" alt="Jayce">
+            </li>
+            <li class="sobre__list__item">
+                <h1 class="title--small">Viktor</h1>
+                <img src="./dist/images/viktor.jpg" alt="Viktor">
+            </li>
+        </ul>
+        <ul data-tab-id="cidades" class="sobre__list cidades">
+            <li class="sobre__list__item">
+                <img src="./dist/images/piltover.jpg" alt="Piltover">
+            </li>
+            <li class="sobre__list__item">
+                <h1 class="title--small">Piltover</h1>
+                <p class="text">
+                    Piltover é conhecida como "a Cidade do Progresso". Situada acima de Zaun, Piltover é uma metrópole próspera, repleta de inovação e avanços tecnológicos. A cidade é o lar de cientistas, inventores e acadêmicos que impulsionam o desenvolvimento de novas tecnologias, muitas vezes alimentadas por hextech, uma fonte de energia mágica. Piltover é marcada por sua arquitetura grandiosa, mercados vibrantes e um forte senso de ordem e progresso. É também um centro comercial importante, com suas docas movimentadas e um comércio robusto.
+                </p>
+            </li>
+            <li class="sobre__list__item sobre__list__item--reverse">
+                <img src="./dist/images/zaun.jpg" alt="Zaun">
+            </li>
+            <li class="sobre__list__item">
+                <h1 class="title--small">Zaun</h1>
+                <p class="text">
+                    Zaun, em contraste, é uma cidade subterrânea sombria e poluída, situada diretamente abaixo de Piltover. Conhecida por sua atmosfera industrial e muitas vezes tóxica, Zaun é um lugar onde a desigualdade social é evidente. Enquanto Piltover prospera, muitos habitantes de Zaun vivem em condições precárias, frequentemente recorrendo ao crime ou a trabalhos perigosos nas fábricas. A cidade é marcada por sua engenhosidade bruta e um espírito de sobrevivência, com um submundo vibrante de contrabandistas e inventores que trabalham à margem da sociedade. A poluição e os resíduos industriais de Piltover muitas vezes descem para Zaun, exacerbando ainda mais as dificuldades da população local.
+                </p>
+            </li>
+        </ul>
+        <script src="dist/js/main.js"></script>
+    </body>
+    </html>

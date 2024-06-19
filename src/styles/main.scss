@@ -1,6 +1,7 @@
 @use "variaveis";
 @use "header";
 @use "home";
+@use "sobre";
 
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
@@ -44,6 +45,14 @@ body {
 
     @media (max-width: 767px) {
         @include text(15px);
+    }
+}
+
+.title--small {
+    @include title(28px);
+
+    @media (max-width: 768px) {
+        @include title(22px);
     }
 }
 
