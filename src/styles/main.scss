@@ -2,6 +2,7 @@
 @use "header";
 @use "home";
 @use "sobre";
+@use "footer";
 
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
@@ -30,6 +31,14 @@ body {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+}
+
+.text--small {
+    @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text(11px);
+    }
 }
 
 .text {
